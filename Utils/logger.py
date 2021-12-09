@@ -30,7 +30,7 @@ class Logger(object):
     print("\nTraining started")
     #print("================")
     self.model = model
-    #print(self.model.summary())
+    print(self.model.summary())
 
   def log_train_epoch(self, epoch, loss, custom="", is_iter=False):
     self.loss_hist.append(loss)
